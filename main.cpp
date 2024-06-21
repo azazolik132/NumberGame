@@ -1,5 +1,6 @@
 #include "iostream"
 #include "ctime"
+#include "color.h"
 
 using namespace std;
 // hadani tajneho cisla
@@ -11,10 +12,10 @@ int main(int argc, char *argv[]){
     cout << "Zadej svuj typ na tajne cislo: ";
     cin >> hracovoCislo;
     if(tajneCislo == hracovoCislo) {
-        cout << " Trefil si!" <<endl;
+        cout << GREEN << " Trefil si!" << RESET << endl;
     }
-    else cout << "Netrefil si :(" <<endl ;
+    else cout << RED << "Netrefil si :(" << RESET << endl;
     cout << "Tajne cislo bylo: " << tajneCislo;
     return 0;
-    
+
 }
